@@ -44,21 +44,25 @@ class CommentController extends Controller
      */
     public function createAction(Request $request)
     {
-        $entity = new Comment();
-        $form = $this->createCreateForm($entity);
-        $form->handleRequest($request);
+        $form = $this->createForm('comment', null, array(
+            'action' => $this->generateUrl('comment_create'),
+            'method' => 'POST',
+        ));
+        $form->add('submit', 'submit', array('label' => 'Create'));
 
-        if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($entity);
-            $em->flush();
+        if ('POST' == $request->getMethod()) {
+            $form->handleRequest($request);
+            if ($form->isValid()) {
+                $comment = $form->getData();
+                $comment->setAuthor($this->getUser());
+                $this->get('comment.manager')->update($comment);
 
-            return $this->redirect($this->generateUrl('comment_show', array('id' => $entity->getId())));
+                return $this->redirect($this->generateUrl('comment_show', array('id' => $comment->getId())));
+            }
         }
 
         return array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
+            'form'   => $form->createView()
         );
     }
 

@@ -67,3 +67,10 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+services:
+  comment.manager:
+    class: iim\BlogBundle\Manager\CommentManager
+    arguments:
+      - "@doctrine.orm.entity_manager"
+      - iim\BlogBundle\Entity\Comment
