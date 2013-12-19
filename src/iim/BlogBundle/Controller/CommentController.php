@@ -27,9 +27,7 @@ class CommentController extends Controller
      */
     public function indexAction()
     {
-        $em = $this->getDoctrine()->getManager();
-
-        $entities = $em->getRepository('iimBlogBundle:Comment')->findAll();
+        $entities= $this->get('comment.manager')->findAll();
 
         return array(
             'entities' => $entities,
@@ -38,8 +36,7 @@ class CommentController extends Controller
     /**
      * Creates a new Comment entity.
      *
-     * @Route("/", name="comment_create")
-     * @Method("POST")
+     * @Route("/create", name="comment_create")
      * @Template("iimBlogBundle:Comment:new.html.twig")
      */
     public function createAction(Request $request)
@@ -54,52 +51,14 @@ class CommentController extends Controller
             $form->handleRequest($request);
             if ($form->isValid()) {
                 $comment = $form->getData();
-                $comment->setAuthor($this->getUser());
+                //$comment->setAuthor($this->getUser());
                 $this->get('comment.manager')->update($comment);
 
                 return $this->redirect($this->generateUrl('comment_show', array('id' => $comment->getId())));
             }
         }
-
         return array(
             'form'   => $form->createView()
-        );
-    }
-
-    /**
-    * Creates a form to create a Comment entity.
-    *
-    * @param Comment $entity The entity
-    *
-    * @return \Symfony\Component\Form\Form The form
-    */
-    private function createCreateForm(Comment $entity)
-    {
-        $form = $this->createForm(new CommentType(), $entity, array(
-            'action' => $this->generateUrl('comment_create'),
-            'method' => 'POST',
-        ));
-
-        $form->add('submit', 'submit', array('label' => 'Create'));
-
-        return $form;
-    }
-
-    /**
-     * Displays a form to create a new Comment entity.
-     *
-     * @Route("/new", name="comment_new")
-     * @Method("GET")
-     * @Template()
-     */
-    public function newAction()
-    {
-        $entity = new Comment();
-        $form   = $this->createCreateForm($entity);
-
-        return array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
         );
     }
 
@@ -112,9 +71,7 @@ class CommentController extends Controller
      */
     public function showAction($id)
     {
-        $em = $this->getDoctrine()->getManager();
-
-        $entity = $em->getRepository('iimBlogBundle:Comment')->find($id);
+        $entity = $this->get('comment.manager')->find($id);
 
         if (!$entity) {
             throw $this->createNotFoundException('Unable to find Comment entity.');
@@ -132,80 +89,35 @@ class CommentController extends Controller
      * Displays a form to edit an existing Comment entity.
      *
      * @Route("/{id}/edit", name="comment_edit")
-     * @Method("GET")
      * @Template()
      */
-    public function editAction($id)
+    public function editAction(Request $request, $id)
     {
-        $em = $this->getDoctrine()->getManager();
+        $entity = $this->get('comment.manager')->find($id);
 
-        $entity = $em->getRepository('iimBlogBundle:Comment')->find($id);
 
-        if (!$entity) {
-            throw $this->createNotFoundException('Unable to find Comment entity.');
-        }
-
-        $editForm = $this->createEditForm($entity);
-        $deleteForm = $this->createDeleteForm($id);
-
-        return array(
-            'entity'      => $entity,
-            'edit_form'   => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
-        );
-    }
-
-    /**
-    * Creates a form to edit a Comment entity.
-    *
-    * @param Comment $entity The entity
-    *
-    * @return \Symfony\Component\Form\Form The form
-    */
-    private function createEditForm(Comment $entity)
-    {
-        $form = $this->createForm(new CommentType(), $entity, array(
-            'action' => $this->generateUrl('comment_update', array('id' => $entity->getId())),
-            'method' => 'PUT',
+        $form = $this->createForm('comment', $entity, array(
+            'action' => $this->generateUrl('comment_edit', array('id' => $entity->getId())),
+            'method' => 'POST',
         ));
+        $form->add('submit', 'submit', array('label' => 'Edit'));
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
+        if ('POST' == $request->getMethod()) {
+            $form->handleRequest($request);
+            if ($form->isValid()) {
+                $comment = $form->getData();
+                $this->get('comment.manager')->update($comment);
 
-        return $form;
-    }
-    /**
-     * Edits an existing Comment entity.
-     *
-     * @Route("/{id}", name="comment_update")
-     * @Method("PUT")
-     * @Template("iimBlogBundle:Comment:edit.html.twig")
-     */
-    public function updateAction(Request $request, $id)
-    {
-        $em = $this->getDoctrine()->getManager();
-
-        $entity = $em->getRepository('iimBlogBundle:Comment')->find($id);
-
-        if (!$entity) {
-            throw $this->createNotFoundException('Unable to find Comment entity.');
+                return $this->redirect($this->generateUrl('comment_show', array('id' => $comment->getId())));
+            }
         }
-
-        $deleteForm = $this->createDeleteForm($id);
-        $editForm = $this->createEditForm($entity);
-        $editForm->handleRequest($request);
-
-        if ($editForm->isValid()) {
-            $em->flush();
-
-            return $this->redirect($this->generateUrl('comment_edit', array('id' => $id)));
-        }
-
         return array(
-            'entity'      => $entity,
-            'edit_form'   => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
+            'edit_form'   => $form->createView(),
+            'delete_form' => $this->createDeleteForm($id)->createView()
         );
     }
+
+
     /**
      * Deletes a Comment entity.
      *
@@ -218,15 +130,15 @@ class CommentController extends Controller
         $form->handleRequest($request);
 
         if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $entity = $em->getRepository('iimBlogBundle:Comment')->find($id);
+            $entity = $this->get('comment.manager')->find($id);
 
             if (!$entity) {
                 throw $this->createNotFoundException('Unable to find Comment entity.');
             }
 
-            $em->remove($entity);
-            $em->flush();
+            $this->get('comment.manager')->delete($entity);
+
+
         }
 
         return $this->redirect($this->generateUrl('comment'));

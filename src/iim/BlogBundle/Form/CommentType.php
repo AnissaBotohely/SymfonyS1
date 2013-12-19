@@ -34,6 +34,6 @@ class CommentType extends AbstractType
      */
     public function getName()
     {
-        return 'iim_blogbundle_comment';
+        return 'comment';
     }
 }
