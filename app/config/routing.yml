@@ -1,0 +1,5 @@
+iim_blog:
+    resource: "@iimBlogBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
