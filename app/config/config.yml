@@ -35,7 +35,7 @@ twig:
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [ ]
+    bundles:        [ iimBlogBundle ]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
@@ -82,16 +82,27 @@ services:
       - "@doctrine.orm.entity_manager"
       - iim\BlogBundle\Entity\Comment
 
+  image.manager:
+      class: iim\BlogBundle\Manager\ImageManager
+      arguments:
+        - "@doctrine.orm.entity_manager"
+        - iim\BlogBundle\Entity\Image
+
   iim.comment.form.type :
           class: iim\BlogBundle\Form\CommentType
           tags:
             - { name: form.type, alias: comment }
+  iim.image.form.type :
+            class: iim\BlogBundle\Form\ImageType
+            tags:
+              - { name: form.type, alias: image }
 
   article.listener:
           class: iim\BlogBundle\Listener\CommentListener
           arguments: ["@service_container"]
           tags:
               - { name: doctrine.event_listener, event: prePersist }
+
 
 sonata_doctrine_orm_admin:
   # default value is null, so doctrine uses the value defined in the configuration
@@ -141,3 +152,9 @@ sonata_block:
        sonata.block.service.action:
        sonata.block.service.rss:
 
+vich_uploader:
+    db_driver: orm
+    mappings:
+        product_image:
+            upload_destination: product_image_fs
+            namer: vich_uploader.namer_uniqid
