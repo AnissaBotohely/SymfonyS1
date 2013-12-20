@@ -51,7 +51,7 @@ class CommentController extends Controller
             $form->handleRequest($request);
             if ($form->isValid()) {
                 $comment = $form->getData();
-                //$comment->setAuthor($this->getUser());
+                $comment->setAuthor($this->getUser());
                 $this->get('comment.manager')->update($comment);
 
                 return $this->redirect($this->generateUrl('comment_show', array('id' => $comment->getId())));

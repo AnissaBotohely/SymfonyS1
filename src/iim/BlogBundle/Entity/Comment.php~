@@ -68,27 +68,5 @@ class Comment
         return $this->content;
     }
 
-    /**
-     *
-     * Set author
-     * @param int $author
-     * @return Comment
-     */
-    public function setAuthor($author)
-    {
-        $this->author = $author;
-    }
-
-    /**
-     * Get author
-     * @return int
-     */
-    public function getAuthor()
-    {
-        return $this->author;
-    }
-
-
-
 
 }
