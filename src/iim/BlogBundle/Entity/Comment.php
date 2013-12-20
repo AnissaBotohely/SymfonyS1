@@ -3,6 +3,7 @@
 namespace iim\BlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
  * Comment
@@ -12,6 +13,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Comment
 {
+    use ORMBehaviors\Timestampable\Timestampable;
+
     /**
      * @var integer
      *
