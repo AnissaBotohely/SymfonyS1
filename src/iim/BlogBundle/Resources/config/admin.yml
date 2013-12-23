@@ -1,6 +1,12 @@
 services:
-    iim.blog.admin.article:
+    iim.blog.admin.comment:
       class: iim\BlogBundle\Admin\CommentAdmin
       tags:
         - { name: sonata.admin, manager_type: orm, group: Blog, label: Comments}
       arguments: [null, iim\BlogBundle\Entity\Comment,SonataAdminBundle:CRUD]
+
+    iim.blog.admin.image:
+      class: iim\BlogBundle\Admin\ImageAdmin
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Blog, label: Images}
+      arguments: [null, iim\BlogBundle\Entity\Image,SonataAdminBundle:CRUD]

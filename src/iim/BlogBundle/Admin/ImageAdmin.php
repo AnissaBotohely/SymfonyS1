@@ -14,7 +14,7 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 
-class CommentAdmin extends Admin
+class ImageAdmin extends Admin
 {
 
     //liste des champs modifiables dans l'edit
@@ -22,7 +22,7 @@ class CommentAdmin extends Admin
     {
         $formMapper
             ->with('General')
-            ->add('content')
+            ->add('image', 'file')
             ->end()
         ;
     }
@@ -46,7 +46,7 @@ class CommentAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('content')
+            ->add('image')
 
         ;
     }
@@ -56,7 +56,7 @@ class CommentAdmin extends Admin
     protected function configureShowField(ShowMapper $show)
     {
         $show
-            ->add('content')
+            ->add('image')
         ;
     }
 }

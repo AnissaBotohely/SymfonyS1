@@ -51,7 +51,7 @@ class ImageController extends Controller
             $form->handleRequest($request);
             if ($form->isValid()) {
                 $image = $form->getData();
-                //$comment->setAuthor($this->getUser());
+                //$image->setAuthor($this->getUser());
                 $this->get('image.manager')->update($image);
 
                 return $this->redirect($this->generateUrl('image_show', array('id' => $image->getId())));
@@ -108,9 +108,9 @@ class ImageController extends Controller
             $form->handleRequest($request);
             if ($form->isValid()) {
                 $image = $form->getData();
-                $this->get('comment.manager')->update($image);
+                $this->get('image.manager')->update($image);
 
-                return $this->redirect($this->generateUrl('comment_show', array('id' => $image->getId())));
+                return $this->redirect($this->generateUrl('image_show', array('id' => $image->getId())));
             }
         }
         return array(

@@ -25,8 +25,6 @@ class Image {
      */
     protected $id;
 
-    // ..... other fields
-
     /**
      * @Assert\File(
      *     maxSize="1M",
@@ -44,6 +42,13 @@ class Image {
      * @var string $imageName
      */
     protected $imageName;
+
+    /**
+     * @var integer
+     *
+     * @ORM\ManyToOne(targetEntity="User")
+     */
+    private $author;
 
     /**
      * Get id
@@ -93,6 +98,24 @@ class Image {
     {
         return $this->image;
     }
+
+    /**
+     * @param int $author
+     */
+    public function setAuthor($author)
+    {
+        $this->author = $author;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+
+
 
 
 }
