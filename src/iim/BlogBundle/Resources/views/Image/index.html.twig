@@ -18,14 +18,22 @@
                 <td><a href="{{ path('image_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>
                     <img src="{{ vich_uploader_asset(entity, 'image')  | imagine_filter('my_thumb') }}" />
-                <ul>
-                    <li>
-                        <a href="{{ path('image_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('image_edit', { 'id': entity.id }) }}">edit</a>
-                    </li>
-                </ul>
+
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    <ul>
+                        <li>
+                            <a href="{{ path('image_show', { 'id': entity.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('image_edit', { 'id': entity.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                {% else %}
+
+                {% endif %}
+
+
+
                 </td>
             </tr>
         {% endfor %}
