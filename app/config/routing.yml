@@ -34,3 +34,4 @@ _sonata_admin:
 _imagine:
     resource: .
     type:     imagine
+

@@ -23,7 +23,9 @@
         "sonata-project/doctrine-orm-admin-bundle": "dev-master",
         "knplabs/doctrine-behaviors": "1.0.0",
         "vich/uploader-bundle": "dev-master",
-        "liip/imagine-bundle": "dev-master"
+        "liip/imagine-bundle": "dev-master",
+        "knplabs/knp-gaufrette-bundle": "0.1.4"
+
 
 
 

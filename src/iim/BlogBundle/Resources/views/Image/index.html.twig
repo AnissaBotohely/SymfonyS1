@@ -15,9 +15,10 @@
         {% for entity in entities %}
             <tr>
                 <td><a href="{{ path('image_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-                <img src="{{ vich_uploader_asset(entity, 'image')  | imagine_filter('my_thumb') }}" />
                 <td>
-                <ul>
+                    <img src="{{ vich_uploader_asset(entity, 'image')  | imagine_filter('my_thumb', true) }}" />
+
+                    <ul>
                     <li>
                         <a href="{{ path('image_show', { 'id': entity.id }) }}">show</a>
                     </li>

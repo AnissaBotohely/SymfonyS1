@@ -3,6 +3,7 @@
 namespace iim\BlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
  * Comment
@@ -12,6 +13,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Comment
 {
+    use ORMBehaviors\Timestampable\Timestampable;
+
     /**
      * @var integer
      *
@@ -34,6 +37,13 @@ class Comment
      * @ORM\ManyToOne(targetEntity="User")
      */
     private $author;
+
+    /**
+     * @var integer
+     *
+     * @ORM\ManyToOne(targetEntity="Image")
+     */
+    private $image;
 
     /**
      * Get id
@@ -67,6 +77,28 @@ class Comment
     {
         return $this->content;
     }
+
+    /**
+     *
+     * Set author
+     * @param int $author
+     * @return Comment
+     */
+    public function setAuthor($author)
+    {
+        $this->author = $author;
+    }
+
+    /**
+     * Get author
+     * @return int
+     */
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+
+
 
 
 }

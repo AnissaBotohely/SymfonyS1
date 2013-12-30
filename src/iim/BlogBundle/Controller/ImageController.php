@@ -51,7 +51,7 @@ class ImageController extends Controller
             $form->handleRequest($request);
             if ($form->isValid()) {
                 $image = $form->getData();
-                //$image->setAuthor($this->getUser());
+                $image->setAuthor($this->getUser());
                 $this->get('image.manager')->update($image);
 
                 return $this->redirect($this->generateUrl('image_show', array('id' => $image->getId())));
@@ -96,7 +96,6 @@ class ImageController extends Controller
     public function editAction(Request $request, $id)
     {
         $entity = $this->get('image.manager')->find($id);
-
 
         $form = $this->createForm('image', $entity, array(
             'action' => $this->generateUrl('image_edit', array('id' => $entity->getId())),

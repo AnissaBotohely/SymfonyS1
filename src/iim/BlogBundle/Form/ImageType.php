@@ -17,10 +17,9 @@ class ImageType extends AbstractType
         $builder
             ->add('imageName')
             ->add('image')
-
         ;
     }
-    
+
     /*
      * @param OptionsResolverInterface $resolver
      */

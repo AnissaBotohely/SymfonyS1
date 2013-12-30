@@ -13,7 +13,11 @@
                 <th>Imagename</th>
                 <td>{{ entity.imageName }}</td>
             </tr>
+
         </tbody>
+        <img src="{{ vich_uploader_asset(entity, 'image')  | imagine_filter('my_thumb') }}" />
+
+
     </table>
 
         <ul class="record_actions">

@@ -158,17 +158,56 @@ sonata_block:
        sonata.block.service.action:
        sonata.block.service.rss:
 
+knp_gaufrette:
+    stream_wrapper: ~
+
+    adapters:
+        product_adapter:
+            local:
+                directory: %kernel.root_dir%/../web/images/products
+
+    filesystems:
+        product_image_fs:
+            adapter:    product_adapter
+
 vich_uploader:
-    db_driver: orm
+    db_driver: orm # or mongodb
+    gaufrette: true # set to true to enable gaufrette support
+    storage: vich_uploader.storage.gaufrette
     mappings:
         product_image:
             uri_prefix: /images/products
-            upload_destination: %kernel.root_dir%/../web/images/products
+            upload_destination: product_image_fs
             namer: vich_uploader.namer_uniqid
 
+
+
 liip_imagine:
+    driver:               gd
+    web_root:             %kernel.root_dir%/../web
+    cache_mkdir_mode:     0777
+    cache_prefix:         /media/cache
+    cache:                web_path
+    cache_clearer:        true
+    data_loader:          filesystem
+    controller_action:    liip_imagine.controller:filterAction
+    formats:              []
     filter_sets:
         my_thumb:
             quality: 75
             filters:
-                thumbnail: { size: [120, 90], mode: outbound }
+                thumbnail: { size: [1000, 1000], mode: inset }
+
+        # Prototype
+        name:
+            path:                 ~
+            quality:              100
+            format:               ~
+            cache:                ~
+            data_loader:          ~
+            controller_action:    ~
+            route:                []
+            filters:
+
+                # Prototype
+                name:                 []

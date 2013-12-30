@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: anissabotohely
- * Date: 20/12/13
- * Time: 11:12
- */
+
 
 namespace iim\BlogBundle\Entity;
 
@@ -114,8 +109,5 @@ class Image {
     {
         return $this->author;
     }
-
-
-
 
 }

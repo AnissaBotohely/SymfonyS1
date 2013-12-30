@@ -39,6 +39,13 @@ class Comment
     private $author;
 
     /**
+     * @var integer
+     * @ORM\ManyToOne(targetEntity="Image")
+     */
+    private $img;
+
+
+    /**
      * Get id
      *
      * @return integer 
@@ -91,7 +98,25 @@ class Comment
         return $this->author;
     }
 
+    /**
+     *
+     * Set img
+     * @param int $img
+     * @return Comment
+     */
+    public function setImg($img)
+    {
+        $this->img = $img;
+    }
 
+    /**
+     * Get img
+     * @return int
+     */
+    public function getImg()
+    {
+        return $this->img;
+    }
 
 
 }
