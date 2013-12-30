@@ -35,3 +35,6 @@ _imagine:
     resource: .
     type:     imagine
 
+homepage:
+    path:      /
+    defaults:  { _controller: iimBlogBundle:Image:index }
