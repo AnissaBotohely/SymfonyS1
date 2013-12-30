@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> {% block title %}Caranille{% endblock %}</title>
+
+    {% stylesheets
+    '@iimBlogBundle/Resources/public/css/*'
+    filter='cssrewrite'
+    %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css">
+
+    {% endstylesheets %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('caranille.ico') }}" />
+</head>
+
+<body>
+{% block body %}
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <a href="{{ path('homepage') }}"><img src="{{ asset('images/caranille3.png') }}" style= " padding :10px; " /></a>
+
+               <div id="menu">
+
+                   {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                        {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+                        <a href="{{ path('fos_user_security_logout') }}">
+                            {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                        </a>
+                        <a href="{{ path('image_create') }}">
+                            Uploadez votre image
+                        </a>
+
+                     {% else %}
+                        <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                        <a href="{{ path('fos_user_registration_register') }}">   S'inscrire</a>
+                    {% endif %}
+
+
+                {% for type, messages in app.session.flashbag.all() %}
+                    {% for key, message in messages %}
+                        <div class="flash-{{ type }}">
+                            {{ message|trans({}, 'FOSUserBundle') }}
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+
+               </div>
+
+        </div>
+    </div>
+
+{% block content %}
+<div class="content" style="margin-top: 60px; margin-left: 60px;">
+</div>
+{% endblock %}
+
+{% endblock %}
+
+{%javascripts
+'@iimBlogBundle/Resources/public/js/*'
+%}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+</body>
+</html>
