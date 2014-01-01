@@ -2,75 +2,30 @@
 
 {% block content -%}
     <div class="content" style="margin-top: 60px; margin-left: 60px;">
-    <h1>Liste des images </h1>
+        <h1>Liste des images : </h1>
+
         <table class="records_list">
             <tbody>
             {% for entity in entities %}
                 <tr>
                     <td>
                         <img src="{{ vich_uploader_asset(entity, 'image')  | imagine_filter('thumbnail') }}" />
-                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                        <ul class="show" style="list-style-type: none;">
-                            <li>
-                                <a href="{{ path('image_show', { 'id': entity.id }) }}">Voir l'image</a>
-                            </li>
-                            <li>
-                                <a href="{{ path('image_edit', { 'id': entity.id }) }}">Editer l'image</a>
-                            </li>
-                        </ul>
-                    {% else %}
+                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                            <ul>
+                                <li>
+                                    <a href="{{ path('image_show', { 'id': entity.id }) }}">show</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('image_edit', { 'id': entity.id }) }}">edit</a>
+                                </li>
+                            </ul>
+                        {% else %}
 
-<<<<<<< HEAD
-                    {% endif %}
+                        {% endif %}
                     </td>
                 </tr>
             {% endfor %}
             </tbody>
         </table>
-=======
-    <table class="records_list">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>ImageName</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for entity in entities %}
-            <tr>
-                <td><a href="{{ path('image_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-                <td>
-                    <img src="{{ vich_uploader_asset(entity, 'image')  | imagine_filter('my_thumb') }}" />
-
-                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <ul>
-                        <li>
-                            <a href="{{ path('image_show', { 'id': entity.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('image_edit', { 'id': entity.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                {% else %}
-
-                {% endif %}
-
-
-
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-        <ul>
-        <li>
-            <a href="{{ path('image_create') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
->>>>>>> 956d1f8b18bf3bacbbc765b9aec82f6e4fdaa783
     </div>
-    {% endblock %}
+{% endblock %}
