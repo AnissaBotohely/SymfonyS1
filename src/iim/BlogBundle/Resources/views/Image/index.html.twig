@@ -2,8 +2,32 @@
 
 {% block content -%}
     <div class="content" style="margin-top: 60px; margin-left: 60px;">
-    <h1>Liste des images : </h1>
+    <h1>Liste des images </h1>
+        <table class="records_list">
+            <tbody>
+            {% for entity in entities %}
+                <tr>
+                    <td>
+                        <img src="{{ vich_uploader_asset(entity, 'image')  | imagine_filter('thumbnail') }}" />
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                        <ul class="show" style="list-style-type: none;">
+                            <li>
+                                <a href="{{ path('image_show', { 'id': entity.id }) }}">Voir l'image</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('image_edit', { 'id': entity.id }) }}">Editer l'image</a>
+                            </li>
+                        </ul>
+                    {% else %}
 
+<<<<<<< HEAD
+                    {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+=======
     <table class="records_list">
         <thead>
             <tr>
@@ -18,14 +42,22 @@
                 <td><a href="{{ path('image_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>
                     <img src="{{ vich_uploader_asset(entity, 'image')  | imagine_filter('my_thumb') }}" />
-                <ul>
-                    <li>
-                        <a href="{{ path('image_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('image_edit', { 'id': entity.id }) }}">edit</a>
-                    </li>
-                </ul>
+
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    <ul>
+                        <li>
+                            <a href="{{ path('image_show', { 'id': entity.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('image_edit', { 'id': entity.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                {% else %}
+
+                {% endif %}
+
+
+
                 </td>
             </tr>
         {% endfor %}
@@ -39,5 +71,6 @@
             </a>
         </li>
     </ul>
+>>>>>>> 956d1f8b18bf3bacbbc765b9aec82f6e4fdaa783
     </div>
     {% endblock %}

@@ -191,23 +191,33 @@ liip_imagine:
     cache_clearer:        true
     data_loader:          filesystem
     controller_action:    liip_imagine.controller:filterAction
-    formats:              []
+    formats:              ['jpg', 'jpeg', 'png', 'gif']
     filter_sets:
-        my_thumb:
-            quality: 75
+        thumbnail:
             filters:
-                thumbnail: { size: [1000, 1000], mode: inset }
-
-        # Prototype
-        name:
-            path:                 ~
-            quality:              100
-            format:               ~
-            cache:                ~
-            data_loader:          ~
-            controller_action:    ~
-            route:                []
+                thumbnail: { size: [100, 100], mode: outbound }
+        little_nice_thumbnail:
             filters:
+                thumbnail: { size: [50, 50], mode: outbound }
+        crop:
+            filters:
+                crop: { start: [10, 20], size: [120, 90] }
+        strip:
+            filters:
+                strip: ~
+        background:
+            filters:
+                background: { color: '#00FFFF' }
+        my_heighten:
+            filters:
+                relative_resize: { heighten: 60 } # Transforms 50x40 to 75x60
+        my_widen:
+            filters:
+                relative_resize: { widen: 32 }    # Transforms 50x40 to 32x26
+        my_increase:
+            filters:
+                relative_resize: { increase: 10 } # Transforms 50x40 to 60x50
+        my_widen:
+            filters:
+                relative_resize: { scale: 2.5 }   # Transforms 50x40 to 125x100
 
-                # Prototype
-                name:                 []
