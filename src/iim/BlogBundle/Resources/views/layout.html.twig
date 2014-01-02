@@ -35,11 +35,16 @@
 
                      {% else %}
                         <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
-                        <a href="{{ path('fos_user_registration_register') }}">   S'inscrire</a>
+                        <a href="{{ path('fos_user_registration_register') }}">S'inscrire</a>
                     {% endif %}
 
+                   {% if is_granted("ROLE_ADMIN") %}
+                       <a href="{{ url('sonata_admin_dashboard') }}">Espace admin</a>
+                   {% else %}
+                   {% endif %}
 
-                {% for type, messages in app.session.flashbag.all() %}
+
+                   {% for type, messages in app.session.flashbag.all() %}
                     {% for key, message in messages %}
                         <div class="flash-{{ type }}">
                             {{ message|trans({}, 'FOSUserBundle') }}
