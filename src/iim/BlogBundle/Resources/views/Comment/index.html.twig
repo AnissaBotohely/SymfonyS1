@@ -1,6 +1,7 @@
-{% extends '::base.html.twig' %}
+{% extends 'iimBlogBundle::layout.html.twig' %}
 
-{% block body -%}
+{% block content -%}
+<div class="content" style="margin-top: 60px; margin-left: 60px;">
     <h1>Comment list</h1>
 
     <table class="records_list">
@@ -39,4 +40,5 @@
             </a>
         </li>
     </ul>
-    {% endblock %}
+    </div>
+{% endblock %}

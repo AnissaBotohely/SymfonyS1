@@ -3,27 +3,25 @@
 {% block content -%}
     <div class="content" style="margin-top: 60px; margin-left: 60px;">
         <h1>Liste des images chargées: </h1>
-        <table class="records_list">
-            <tbody>
+        <div class="images">
             {% for entity in entities %}
-                <tr>
-                    <td>
-                        <img src="{{ vich_uploader_asset(entity, 'image')  | imagine_filter('thumbnail') }}" />
-                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                            <ul>
-                                <li>
-                                    <a href="{{ path('image_show', { 'id': entity.id }) }}">show</a>
-                                </li>
-                                <li>
-                                    <a href="{{ path('image_edit', { 'id': entity.id }) }}">edit</a>
-                                </li>
-                            </ul>
-                        {% else %}
-                        {% endif %}
-                    </td>
-                </tr>
+            <div class="image">
+
+                <img src="{{ vich_uploader_asset(entity, 'image')  | imagine_filter('thumbnail') }}" />
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    <ul>
+                        <li>
+                            <a href="{{ path('image_show', { 'id': entity.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('image_edit', { 'id': entity.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                {% else %}
+                {% endif %}
+            </div>
+
             {% endfor %}
-            </tbody>
-        </table>
+        </div>
     </div>
 {% endblock %}
