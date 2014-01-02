@@ -40,7 +40,7 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="30" selection-start="1759" selection-end="1759" vertical-scroll-proportion="0.44771722" vertical-offset="341" max-vertical-offset="1200">
+            <state line="40" column="30" selection-start="1557" selection-end="1610" vertical-scroll-proportion="0.49189985" vertical-offset="266" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
@@ -150,8 +150,8 @@
         <option value="$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/show.html.twig" />
         <option value="$PROJECT_DIR$/src/iim/BlogBundle/Form/CommentType.php" />
         <option value="$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/layout.html.twig" />
       </list>
     </option>
   </component>
@@ -920,7 +920,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="30" selection-start="1759" selection-end="1759" vertical-scroll-proportion="0.44771722" vertical-offset="341" max-vertical-offset="1200">
+        <state line="40" column="30" selection-start="1557" selection-end="1610" vertical-scroll-proportion="0.49189985" vertical-offset="266" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>
