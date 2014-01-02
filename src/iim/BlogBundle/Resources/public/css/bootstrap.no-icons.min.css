@@ -1,4 +1,13 @@
 
+
+.bloc-image{max-height: 300px; width: 60%; display: inline;  }
+
+hr {
+    clear: both;
+    visibility: hidden;
+
+}
+
 #menu{margin-left:50px; display:inline-block;}
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
