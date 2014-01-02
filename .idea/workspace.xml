@@ -2,8 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="525dc36b-5ffd-4fa9-a8d8-983ee7c395aa" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/background/images/products/52b892095becd.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/background/images/products/52c0556a1ea46.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/background/images/products/52c05a72823aa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/background/images/products/52c05ccb09d13.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/background/images/products/52c1daefee955.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/background/images/products/52c1dbb8833c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/background/images/products/52c1dd1525f09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/background/images/products/52c1fc03aa812.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/background/images/products/52c1fca5370c1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/crop/images/products/52b892095becd.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/crop/images/products/52c0556a1ea46.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/crop/images/products/52c05a72823aa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/crop/images/products/52c05ccb09d13.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/crop/images/products/52c1daefee955.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/crop/images/products/52c1dbb8833c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/crop/images/products/52c1dd1525f09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/crop/images/products/52c1fc03aa812.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/crop/images/products/52c1fca5370c1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/little_nice_thumbnail/images/products/52b892095becd.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/little_nice_thumbnail/images/products/52c0556a1ea46.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/little_nice_thumbnail/images/products/52c05a72823aa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/little_nice_thumbnail/images/products/52c05ccb09d13.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/little_nice_thumbnail/images/products/52c1daefee955.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/little_nice_thumbnail/images/products/52c1dbb8833c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/little_nice_thumbnail/images/products/52c1dd1525f09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/little_nice_thumbnail/images/products/52c1fc03aa812.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/little_nice_thumbnail/images/products/52c1fca5370c1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_heighten/images/products/52b892095becd.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_heighten/images/products/52c0556a1ea46.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_heighten/images/products/52c05a72823aa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_heighten/images/products/52c05ccb09d13.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_heighten/images/products/52c1daefee955.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_heighten/images/products/52c1dbb8833c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_heighten/images/products/52c1dd1525f09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_heighten/images/products/52c1fc03aa812.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_heighten/images/products/52c1fca5370c1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52b892095becd.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52c0556a1ea46.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52c05a72823aa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52c05ccb09d13.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52c1daefee955.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52c1dbb8833c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52c1dd1525f09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52c1e7d753b5e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52c1f38d99b56.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52c1fbebcad33.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52c1fc03aa812.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb/images/products/52c1fca5370c1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_widen/images/products/52b892095becd.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_widen/images/products/52c0556a1ea46.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_widen/images/products/52c05a72823aa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_widen/images/products/52c05ccb09d13.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_widen/images/products/52c1daefee955.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_widen/images/products/52c1fca5370c1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/thumbnail/images/products/52b892095becd.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/thumbnail/images/products/52c0556a1ea46.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/thumbnail/images/products/52c05a72823aa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/thumbnail/images/products/52c05ccb09d13.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/thumbnail/images/products/52c1daefee955.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/thumbnail/images/products/52c1dbb8833c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/thumbnail/images/products/52c1dd1525f09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/thumbnail/images/products/52c1fc03aa812.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/thumbnail/images/products/52c1fca5370c1.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SymfonyS1.iml" afterPath="$PROJECT_DIR$/.idea/SymfonyS1.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/index.html.twig" afterPath="$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SymfonyS1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,28 +95,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Controller/DefaultController.php">
+      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+            <state line="203" column="28" selection-start="6953" selection-end="7012" vertical-scroll-proportion="0.0" vertical-offset="1097" max-vertical-offset="3435">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Controller/CommentController.php">
+      <file leaf-file-name="show.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2535">
+            <state line="9" column="86" selection-start="286" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Controller/ImageController.php">
+      <file leaf-file-name="config_dev.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="58" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="2580">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -61,52 +125,16 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="37" selection-start="178" selection-end="178" vertical-scroll-proportion="0.09933775" vertical-offset="0" max-vertical-offset="604">
+            <state line="15" column="43" selection-start="690" selection-end="690" vertical-scroll-proportion="0.35885167" vertical-offset="0" max-vertical-offset="627">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageType.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Form/ImageType.php">
+      <file leaf-file-name="bootstrap.no-icons.min.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/public/css/bootstrap.no-icons.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="705">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentType.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Form/CommentType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="-23.125" vertical-offset="0" max-vertical-offset="645">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageAdmin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Admin/ImageAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentAdmin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Admin/CommentAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
+            <state line="2" column="60" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="10965">
               <folding />
             </state>
           </provider>
@@ -148,12 +176,12 @@
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/routing_dev.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/iim/BlogBundle/Resources/public/css/bootstrap.no-icons.min.css" />
         <option value="$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/iim/BlogBundle/Form/ImageType.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/show.html.twig" />
         <option value="$PROJECT_DIR$/src/iim/BlogBundle/Form/CommentType.php" />
+        <option value="$PROJECT_DIR$/src/iim/BlogBundle/Resources/public/css/bootstrap.no-icons.min.css" />
         <option value="$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/index.html.twig" />
       </list>
     </option>
@@ -190,6 +218,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -363,6 +392,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyS1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyS1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyS1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyS1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -644,7 +737,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -652,8 +744,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -711,15 +804,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.253125" sideWeight="0.9801061" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.253125" sideWeight="0.6701031" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -728,7 +821,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -748,75 +841,87 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Listener/CommentListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="28" selection-start="6953" selection-end="7012" vertical-scroll-proportion="0.0" vertical-offset="2672" max-vertical-offset="3435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="86" selection-start="286" selection-end="295" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="726">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Admin/ImageAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Admin/CommentAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Controller/ImageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="58" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="2580">
-          <folding />
-        </state>
+        <state line="29" column="58" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="2580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Controller/CommentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2445">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2445" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Listener/CommentListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Form/CommentType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="-23.125" vertical-offset="0" max-vertical-offset="645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="86" selection-start="286" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Registration/register_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="72" selection-start="1475" selection-end="1505" vertical-scroll-proportion="0.5778146" vertical-offset="206" max-vertical-offset="1125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="28" selection-start="6953" selection-end="7012" vertical-scroll-proportion="0.0" vertical-offset="1097" max-vertical-offset="3435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Form/ImageType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="453" selection-end="453" vertical-scroll-proportion="-7.0416665" vertical-offset="71" max-vertical-offset="675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/public/css/bootstrap.no-icons.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="60" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="10965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="43" selection-start="690" selection-end="690" vertical-scroll-proportion="0.35885167" vertical-offset="0" max-vertical-offset="627">
           <folding />
         </state>
       </provider>
@@ -824,34 +929,6 @@
     <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Listener/ImageListener.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Listener/CommentListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Form/ImageType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Form/CommentType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="-23.125" vertical-offset="0" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/iim/BlogBundle/Resources/views/Image/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="37" selection-start="178" selection-end="178" vertical-scroll-proportion="0.09933775" vertical-offset="0" max-vertical-offset="604">
           <folding />
         </state>
       </provider>
