@@ -25,6 +25,7 @@ class CommentListener {
         if ($entity instanceof Comment) {
             $user = $this->container->get('security.context')->getToken()->getUser();
             $entity->setAuthor($user);
+
         }
 
 

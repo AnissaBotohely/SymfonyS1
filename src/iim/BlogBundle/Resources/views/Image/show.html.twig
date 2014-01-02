@@ -32,6 +32,17 @@
             </a>
         </li>
         <li>{{ form(delete_form) }}</li>
+
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+            <a href="{{ path('comment_create') }}">
+                Ajouter un commentaire
+            </a>
+            <a href="{{ path('comment') }}">
+                Afficher la liste des commentaires
+            </a>
+        {% else %}
+        {% endif %}
+
     </ul>
  </div>
 {% endblock %}

@@ -33,36 +33,39 @@
                             Uploadez votre image
                         </a>
 
-                     {% else %}
+                   {% else %}
                         <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
-                        <a href="{{ path('fos_user_registration_register') }}">   S'inscrire</a>
-                    {% endif %}
+                        <a href="{{ path('fos_user_registration_register') }}">S'inscrire</a>
+                   {% endif %}
+
+                   {% if is_granted("ROLE_ADMIN") %}
+                       <a href="{{ url('sonata_admin_dashboard') }}">Espace admin</a>
+                   {% else %}
+                   {% endif %}
 
 
-                {% for type, messages in app.session.flashbag.all() %}
-                    {% for key, message in messages %}
-                        <div class="flash-{{ type }}">
-                            {{ message|trans({}, 'FOSUserBundle') }}
-                        </div>
+                    {% for type, messages in app.session.flashbag.all() %}
+                        {% for key, message in messages %}
+                            <div class="flash-{{ type }}">
+                                {{ message|trans({}, 'FOSUserBundle') }}
+                            </div>
+                        {% endfor %}
                     {% endfor %}
-                {% endfor %}
 
                </div>
 
         </div>
     </div>
 
-{% block content %}
-<div class="content" style="margin-top: 60px; margin-left: 60px;">
-</div>
-{% endblock %}
+    {% block content %}
+    <div class="content" style="margin-top: 60px; margin-left: 60px;">
+    </div>
+    {% endblock %}
 
 {% endblock %}
 
-{%javascripts
-'@iimBlogBundle/Resources/public/js/*'
-%}
-<script type="text/javascript" src="{{ asset_url }}"></script>
+{%javascripts '@iimBlogBundle/Resources/public/js/*' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
 {% endjavascripts %}
 
 </body>
